@@ -1,0 +1,50 @@
+[
+    {
+        "id" : "0", 
+        "fromDate": "24/01/2023",
+         "toDate"   : "26/01/2023",
+          "high"  :  "2400rs",
+          "medium"  :  "1900rs",
+          "low"  :  "1600rs",
+          "chance": "stable"
+
+     },
+     {       
+          "id" : "1",
+          "fromDate": "24/01/2023",
+         "toDate"   : "26/01/2023",
+         "high"  :  "19500rs",
+         "medium"  :  "18000rs",
+         "low"  :  "15000rs",
+          "chance": "increase"
+     },
+    
+     {       
+        "id" : "2",
+        "fromDate": "24/01/2023",
+       "toDate"   : "26/01/2023",
+       "high"  :  "7500rs",
+       "medium"  :  "7000rs",
+       "low"  :  "6000rs",
+       "chance": "increase"
+ },
+     {       
+        "id" : "3",
+        "fromDate": "24/01/2023",
+        "toDate"   : "26/01/2023",
+        "high"  :  "144rs", 
+          "medium": "1320rs",
+          "low"  :  "1200rs",
+          "chance":"increase"
+        },
+        {
+           "id" : "4",
+           "fromDate": "24/01/2023",
+           "toDate"   : "26/01/2023",
+           "high"  :  "26rs",
+           "medium":  "24rs",
+           "low"  :  "25rs",
+           "chance":"decrease"
+        }
+
+]

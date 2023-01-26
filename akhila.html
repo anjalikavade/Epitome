@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo.html</title>
+</head>
+<body>
+    <h2>Lets know the rates</h2>
+    <p id="data"></p>
+    <script type="text/javascript">
+        var userInput = prompt("Enter 0 =paddy / 1= mirchi /2 =cotton /3=tomato/4=peas");
+        fetch('./akhila.json')
+        .then(function(response){ 
+            return response.json();
+        })
+        .then(function(data){
+           a=userInput;
+             switch(a){
+                case '0':
+                
+                    document.getElementById("data").innerHTML +=
+                    ">>>" + data[a].fromDate + " " + "to" +" "+ data[a].toDate + " "+ "paddy"+ "<br />" +" High quality stock prices are"+ data[a].high+"<br/>"
+                    +"medium quality stock prices are"+data[a].medium  +"<br/>"+"low quality stock prices are"+data[a].low+"<br/>"+"prices may   "+data[a].chance+"<br/>"
+                    break;
+                case '1':
+                
+                document.getElementById("data").innerHTML +=
+                    ">>>" + data[a].fromDate + " " + "to" +" "+ data[a].toDate  + " "+ "mirchi"+"<br />" +" High quality stock prices are"+ data[a].high+"<br/>"
+                    +"medium quality stock prices are"+data[a].medium  +"<br/>"+"low quality stock prices are"+data[a].low+"<br/>"+"prices may   "+data[a].chance+"<br/>"
+                    break;
+                case '2':
+                document.getElementById("data").innerHTML +=
+                    ">>>" + data[a].fromDate + " " + "to" +" "+ data[a].toDate +  " "+ "cotton"+"<br />" +" High quality stock prices are"+ data[a].high+"<br/>"
+                    +"medium quality stock prices are"+data[a].medium  +"<br/>"+"low quality stock prices are"+data[a].low+"<br/>"+"prices may   "+data[a].chance+"<br/>"
+                    break;
+                case '3':
+                document.getElementById("data").innerHTML +=
+                    ">>>" + data[a].fromDate + " " + "to" +" "+ data[a].toDate +  " "+ "tomato"+"<br />" +" High quality stock prices are"+ data[a].high+"<br/>"
+                    +"medium quality stock prices are"+data[a].medium  +"<br/>"+"low quality stock prices are"+data[a].low+"<br/>"+"prices may   "+data[a].chance+"<br/>"
+                    break;  
+                case '4':
+                document.getElementById("data").innerHTML +=
+                    ">>>" + data[a].fromDate + " " + "to" +" "+ data[a].toDate + + " "+ "peas"+"<br />" +" High quality stock prices are"+ data[a].high+"<br/>"
+                    +"medium quality stock prices are"+data[a].medium  +"<br/>"+"low quality stock prices are"+data[a].low+"<br/>"+"prices may   "+data[a].chance+"<br/>"
+                    break;  
+                
+                
+                default:
+                
+                document.getElementById("data").innerHTML +=
+                "sorry data is unavlable"
+            
+
+             }
+        })
+        .catch(function(err) {
+            console.log(err);
+        }
+        );
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    
+</head>
+<body style= "border: 3px solid #1b5e20; padding-left: 2cm;padding-right: 2cm; width: 300px;color: black;" >
+    <h2 style="color:#1b5e20;">WELCOME LET'S MAKE  A CHANGE</h2>
+    <h3 style="display: grid;color: #1b5e20;">ENTER YOUR DETAILS</h3>
+    <form action="vol.php"></form>
+    <label for="Name" style="color: #1b5e20;"> ENTER YOUR NAME</label>
+        <input type="text" id="Name"><br><br>
+    <div>
+        <label for="Mobile Number" style="color: #1b5e20;">ENTER MOBILE NUMBER</label>
+        <input type="number" id="Mobile Number"><br><br>
+    </div>
+    <div style="color: #1b5e20;">
+        GENDER : MALE <input type="radio" name="my gender" > FEMALE <input type="radio" name="my gender"><br><br>
+    </div>
+    <div>
+        <label for="Education" style="color: #1b5e20;">EDUCATION QUALIFICATION </label>
+        <input type="text" id="Education"><br><br>
+    </div>
+    <div>
+        <label for="Dob" style="color:#1b5e20;">ENTER YOUR DOB</label>
+        <input type="date" name="Enter your DOB" id="Dob"><br><br>
+    </div>
+    <div>
+        <label style="color: #1b5e20;">Language</label>
+        <select>
+            <option value="option1">Telugu</option>
+            <option value="option2">Hindi</option>
+            <option value="option3">Tamil</option>
+            <option value="option4">kannada</option>
+
+          </select>
+          
+
+
+    </div>
+    <div>
+        <p style="color:#1b5e20;">REASON WHY UH WANNA DO VOLUNTEERING:</p>
+        <textarea name="reason" id="why" cols="30" rows="10"></textarea>
+    </div><br>
+    <div>
+        <input style="color: white; background-color: green; height: 1cm;width: 6cm;" type="submit" value="submit" id="submit-button" >
+    </div><br>
+
+   <script src="volform.js"></script>
+   
+
+    
+</body>
+</html>
